@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border-style: none;
+}
+
+body {
+  background-color: #343232;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Inter';
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 300px;
+  background-color: #766565;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.input {
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 8px;
+  height: 70px;
+  width: 15.4rem;
+  margin: 1em auto 1em auto;
+  background-color: #c4a6a6;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  font-weight: bolder;
+  min-width: 60px;
+  min-height: 50px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  margin: 2px;
+  background-color: #3e3c3c;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.button:hover {
+  background-color: #343232;
+  color: #dcc6c6;
+  border: 1px solid #f9f6f6;
+  cursor: pointer;
+}
+
+.buttons {
+  
+}
+
+button.button.zero-button {
+  padding-right: 4.2em;
+  padding-left: 4.2em;
+}
+
+.side-operators {
+  color: #c7c85f;
+}
+
+
+@media (max-width: 550px) {
+  body {
+    background-color: white;
+  }
+  .container{
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    background-color: gainsboro;
+  }
+  .button {
+    min-width: calc(100vw / 4);
+    min-height: calc(70vh / 6);
+    font-size: 2em;
+    box-shadow: none;
+    font-weight: normal;
+    border-radius: 0;
+    margin: 0;
+    border: 1px solid black;
+  }
+  h1 {
+    margin-top: 2vh;
+    font-size: 4em;
+    display: none;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70vh;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 0;
+  }
+  button.button.zero-button {
+      padding-right: 0;
+      padding-left: 0;
+    width: calc(100vw/2);
+  }
+  .input {
+    width: 100vw;
+    height: 30vh;
+    font-size: 5em;
+    position: fixed;
+    top: 3vh;
+    margin-top: 0;
+    font-weight: normal;
+    box-shadow: none;
+    background-color: gainsboro;
+  }
+}
